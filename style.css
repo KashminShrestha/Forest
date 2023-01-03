@@ -21,7 +21,7 @@ html,body {
   height:100vh;
   min-height:400px;
   background-size:cover;
-  background-image: url(/img/b2.jpg);
+  background-image: url(/imgs/b2.jpg);
 }
 
 .container{
@@ -43,23 +43,27 @@ section {
 .btn{
 
     font-size: 15px;
+    display: flex;
     text-decoration: none;
     text-transform: capitalize;
+    grid-area: auto;
     display: inline-block;
     letter-spacing: 2px;
     outline: none;
     border-radius:20px;
+    margin: 15px;
     padding: 8px 20px;
     border: 2px solid #fff;
 }
 .btn a {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  grid-area: auto;
   text-align: center;
   color:white;
-  margin-block: o;
+  margin-block: 15px;
   font-size: 15px;
 }
 .btn a:hover{
+  display: block;
   color: white;
   }
    
