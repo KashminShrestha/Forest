@@ -1,9 +1,6 @@
 html {
   scroll-behavior: smooth;
   }
-.txt-center{text-align:center;}
-.txt-left{text-align:left;}
-.txt-right{text-align:right;}
 html,body {
   padding: 0;
   margin: 0;
@@ -23,18 +20,16 @@ nav .navbar-brand {
 
 .first {
   height:100vh;
-  min-height:800px;
-  background-size:cover;
+  background-size: 100% 100%;
   background-image: url(/imgs/b2.jpg);
   position: relative;
 }
 
 .container{
-  height: 55vh;
-  width: 650px;
-  position: absolute;
+  height: 50vh;
+  position: absolute;    
   top: 40vh;
-  left: 350px;
+  right: 150px;
   text-align: center;
   color: white;
   font-style: normal;
@@ -68,7 +63,7 @@ section {
     border: 2px solid #fff;
 }
 .btn a {
-  
+
   text-align: center;
   color:white;
   margin-block: 15px;
