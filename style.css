@@ -11,6 +11,10 @@ html,body {
   letter-spacing: 1px;
   font-family: 'Open Sans', sans-serif;
 }
+nav .navbar-nav .nav-link,
+nav .navbar-brand {
+   color: black;
+}
 .navbar-brand img
 {
   height: 40px;
@@ -19,28 +23,36 @@ html,body {
 
 .first {
   height:100vh;
-  min-height:400px;
+  min-height:800px;
   background-size:cover;
   background-image: url(/imgs/b2.jpg);
+  position: relative;
 }
 
 .container{
+  height: 55vh;
+  width: 650px;
+  position: absolute;
+  top: 40vh;
+  left: 350px;
   text-align: center;
   color: white;
   font-style: normal;
   font-family: monospace;
 
 }
-nav .navbar-nav .nav-link,
-nav .navbar-brand {
-   color: black;
+.container p{
+  font-family: monospace;
+  letter-spacing: 0ch;
 }
-
+.container h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 section {
   height:calc(90% - 50px);
   height: 90vh;
 }
-.btn{
+.btn {
 
     font-size: 15px;
     display: flex;
@@ -56,14 +68,13 @@ section {
     border: 2px solid #fff;
 }
 .btn a {
-  grid-area: auto;
+  
   text-align: center;
   color:white;
   margin-block: 15px;
   font-size: 15px;
 }
 .btn a:hover{
-  display: block;
   color: white;
   }
    
