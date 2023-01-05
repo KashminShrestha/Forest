@@ -4,7 +4,8 @@ html {
 html,body {
   padding: 0;
   margin: 0;
-  background: #fff;
+
+  background-color: #f1f1f1;
   letter-spacing: 1px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -15,25 +16,29 @@ nav .navbar-brand {
 .navbar-brand img
 {
   height: 40px;
+  max-width: 100%;
   padding-left: 40px;
 }
 
 .first {
   height:100vh;
   background-size: 100% 100%;
+  max-width: 100%;
   background-image: url(/imgs/b2.jpg);
   position: relative;
 }
 
 .container{
-  height: 50vh;
-  position: absolute;    
-  top: 40vh;
-  right: 150px;
+  margin: auto;
+  top: 50vh;
+  left: 25%;
+  max-width: 50%;
+  padding: 10px;
   text-align: center;
   color: white;
   font-style: normal;
   font-family: monospace;
+  position: absolute; 
 
 }
 .container p{
@@ -42,6 +47,63 @@ nav .navbar-brand {
 }
 .container h1{
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#about{
+  height:100vh;
+  max-width: 100%;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #e7f7e6;
+  position: relative;
+}
+
+.acontainer{
+  margin: auto;
+  top: 5px;
+  left: 10%;
+  height: auto;
+  max-width: 80%;
+  text-align: center;
+  margin: 0 !important;
+  font-style: normal;
+  font-family: monospace;
+  position: absolute; 
+}
+.acontainer h2{
+  letter-spacing: 0ch;
+  font-size: 5ch;
+  color: #46aa3f;
+}
+.acontainer h1{
+  font-size: 5ch;
+  letter-spacing: 0ch;
+  color: #46aa3f;
+}
+.square {
+  background-image: url(/imgs/ab1.jpg);
+  position: absolute;
+  background-repeat:space;
+  background-size: contain;
+  top: 150px;
+  left: 40px;
+  height: 700px;
+  width: 360px;
+}
+.aboutus{
+  margin: auto;
+  top: 30vh;
+  left: 27%;
+  height: auto;
+  max-width: 70%;
+  text-align: center;
+  margin: 0 !important;
+  padding: 0%;
+  font-style: normal;
+  font-family: monospace;
+  position: absolute; 
 }
 section {
   height:calc(90% - 50px);
