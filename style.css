@@ -1,16 +1,15 @@
-html {
-  scroll-behavior: smooth;
-  }
+
 html,body {
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
-
-  background-color: #f1f1f1;
-  letter-spacing: 1px;
+  background-color: #e7f7e6;
   font-family: 'Open Sans', sans-serif;
 }
+
 nav .navbar-nav .nav-link,
 nav .navbar-brand {
+  z-index: 1 ;
    color: black;
 }
 .navbar-brand img
@@ -19,15 +18,13 @@ nav .navbar-brand {
   max-width: 100%;
   padding-left: 40px;
 }
-
 .first {
   height:100vh;
-  background-size: 100% 100%;
   max-width: 100%;
   background-image: url(/imgs/b2.jpg);
+  background-size: cover;
   position: relative;
 }
-
 .container{
   margin: auto;
   top: 50vh;
@@ -64,8 +61,8 @@ nav .navbar-brand {
   margin: auto;
   top: 5px;
   left: 10%;
+  max-width: 100%;
   height: auto;
-  max-width: 80%;
   text-align: center;
   margin: 0 !important;
   font-style: normal;
@@ -125,13 +122,98 @@ section {
     border: 2px solid #fff;
 }
 .btn a {
-
   text-align: center;
   color:white;
   margin-block: 15px;
   font-size: 15px;
 }
 .btn a:hover{
-  color: white;
+  color: rgb(95, 230, 135);
+}
+#services{
+  height: 100vh;
+  background-image: url(/imgs/s1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#services .container{
+  z-index: 1;
+  top: 40px;
+}
+.box-container{
+  align-items: center;
+}
+.demo{
+  position: absolute;
+  top: 150px;
+  background-color: blue;
+  height: 200px;
+  width: 300px;
+}
+#galary{
+  height:100vh;
+  max-width: 100%;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #e7f7e6;
+  position: relative;
+}
+.grid { 
+  height: auto;
+  position: absolute;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: start;
+  justify-items: start; 
   }
-   
+.grid img {
+  display: grid;
+  border: 1px solid #ccc;
+  box-sizing: content-box;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+}
+.pic{
+  position: absolute;
+  top: 20vh;
+  height: 150vh;
+  width: 1100px;
+}
+.grid:hover img{
+  transform: scale(1.4);
+
+}
+footer {
+  background: #e7f7e6;
+  padding: 10px 0;
+  text-align: center;
+}
+footer a {
+  color: #341db4; 
+  font-size: 20px;
+  padding: 10px;
+  transition: all .5s ease;
+}
+
+footer a:hover {
+  color: rgb(40, 190, 103);
+}
+
+header {
+  background-color: #e7f7e6;
+  padding: 20px 0;
+}
+/* Dropdown menu */
+.dropdown-menu {
+  background-color: #5ab47c;
+}
+.custom-signin{
+  margin-top: 100px !important;
+  margin-bottom: 250px !important;
+}
