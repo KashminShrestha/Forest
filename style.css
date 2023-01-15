@@ -138,18 +138,21 @@ section {
   position: relative;
 }
 #services .container{
-  z-index: 1;
   top: 40px;
 }
-.box-container{
-  align-items: center;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 600px;
 }
-.demo{
-  position: absolute;
-  top: 150px;
-  background-color: blue;
-  height: 200px;
-  width: 300px;
+.grid-item {
+  top: 100px;
+  align-content: center;
+  text-align: center;
 }
 #galary{
   height:100vh;
@@ -197,14 +200,16 @@ footer {
 footer a {
   color: #341db4; 
   font-size: 20px;
-  padding: 10px;
+  padding: 5px;
   transition: all .5s ease;
 }
 
 footer a:hover {
   color: rgb(40, 190, 103);
 }
-
+footer img{
+  height: 90px;
+}
 header {
   background-color: #e7f7e6;
   padding: 20px 0;
